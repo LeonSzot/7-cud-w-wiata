@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leon Szot">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>7 cudów świata</title>
+</head>
+<body>
+    <header>
+        <div class="main-menu">
+            <a class="resize" href="index.html"><div class="resize">Strona główna</div></a>
+            <a class="resize" href="opis.html"><div class="resize">Opisy</div></a>
+            <a class="resize" href="quiz.html"><div class="resize">Quiz</div></a>
+        </div>
+    </header>
+    <h1 class="nag">7 cudów świata</h1>
+    <img class="logo" src="media/logo.jpg" alt="img">
+    <br><br>
+    <div class="info">Siedem cudów świata to lista wyjątkowych starożytnych budowli uznawanych za najbardziej imponujące osiągnięcia architektoniczne starożytności.
+        <div class="lista">
+            <ul>
+                <li>Piramida Cheopsa</li>
+                <li>Wiszące ogrody Semiramidy</li>
+                <li>Świątynia Artemidy w Efezie</li>
+                <li>Posąg Zeusa w Olimpii</li>
+                <li>Mauzoleum w Halikarnasie</li>
+                <li>Kolos Rodyjski</li>
+                <li>Latarnia morska na Faros</li>
+            </ul>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="media/zdj1.jpeg" alt="Piramida Cheopsa">
+        <img src="media/zdj2.jpeg" alt="Wiszące ogrody Semiramidy">
+        <img src="media/zdj3.jpeg" alt="Świątynia Artemidy w Efezie">
+        <img src="media/zdj4.jpeg" alt="Posąg Zeusa w Olimpii">
+        <img src="media/zdj5.jpeg" alt="Mauzoleum w Halikarnasie">
+        <img src="media/zdj6.jpeg" alt="Kolos Rodyjski">
+        <img src="media/zdj7.jpeg" alt="Latarnia morska na Faros">
+    </div>  
+    <table class="tabela">
+        <tr>
+           <td class="tnag">Cud</td>
+           <td class="tnag">Data powstania</td>
+           <td class="tnag">Budowniczy</td>
+        </tr>
+        <tr>
+            <td class="tkom">Piramida Cheopsa</td>
+            <td class="tkom">2575 p.n.e.</td>
+            <td class="tkom">Egpicjanie</td>
+        </tr>
+        <tr>
+            <td class="tkom">Wiszące ogrody Semiramidy</td>
+            <td class="tkom">600 p.n.e.</td>
+            <td class="tkom">Babilończycy</td>
+        </tr>
+        <tr>
+            <td class="tkom">Świątynia Artemidy w Efezie</td>
+            <td class="tkom">560 p.n.e.</td>
+            <td class="tkom">Grecy, Lidyjczycy</td>
+        </tr>
+        <tr>
+            <td class="tkom">Posąg Zeusa w Olimpii</td>
+            <td class="tkom">435-430 p.n.e.</td>
+            <td class="tkom">Grecy</td>
+        </tr>
+        <tr>
+            <td class="tkom">Mauzoleum w Halikarnasie</td>
+            <td class="tkom">353 p.n.e.</td>
+            <td class="tkom">Grecy, Karowie</td>
+        </tr>
+        <tr>
+            <td class="tkom">Kolos Rodyjski</td>
+            <td class="tkom">281 p.n.e.</td>
+            <td class="tkom">Grecy</td>
+        </tr>
+        <tr>
+            <td class="tkom">Latarnia morska na Faros</td>
+            <td class="tkom">280-279 p.n.e.</td>
+            <td class="tkom">Ptolemeusze, Grecy</td>
+        </tr>
+    </table> 
+    <div class="stopka"><footer>&copy; Leon Szot 2tc </footer></div>
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        let currentImageIndex = 0;
+        const intervalTime = 3000; // Change images every 3 seconds (3000ms)
+
+        function changeImage() {
+        images[currentImageIndex].style.display = 'none';
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].style.display = 'block';
+        }
+
+        setInterval(changeImage, intervalTime);
+
+      </script>
+</body>
+</html>
